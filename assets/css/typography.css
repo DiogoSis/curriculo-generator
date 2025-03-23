@@ -1,0 +1,78 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* Textos */
+p {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Links */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Ícones */
+i {
+  margin-right: 8px;
+}
+
+.section h2 i {
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+
+.contact-info i {
+  width: 25px;
+  color: var(--secondary-color);
+}
+
+/* Anos na timeline */
+.year {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}
+
+/* Rodapé */
+footer {
+  font-size: 0.9rem;
+  color: #777;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Diogo de Assis</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="description" content="Currículo profissional de Diogo de Assis - Desenvolvedor Full-Stack">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="profile-container">
+        <div class="profile-pic">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="header-content">
+          <h1>Diogo de Assis</h1>
+          <p class="title">Desenvolvedor Full-Stack | TypeScript | Ruby | Node | SQL | Docker</p>
+        </div>
+      </div>
+      
+      <div class="download-links">
+        <button id="generate-ats-pdf" class="btn btn-secondary">
+          <i class="fas fa-file-pdf"></i> Gerar CV ATS
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="contato" class="section">
+        <h2><i class="fas fa-address-card"></i> Contato</h2>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> diogodeassis777@gmail.com</p>
+          <p><i class="fas fa-phone"></i> (21) 97066-9909</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rua Santo André LT20 QD20, Nova Iguaçu / 26298-662 - RJ</p>
+          <p><i class="fas fa-globe"></i> <a href="https://www.diogoluna.cloud" target="_blank">www.diogoluna.cloud</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/diogosis" target="_blank">linkedin.com/in/diogosis</a></p>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/DiogoSis" target="_blank">github.com/DiogoSis</a></p>
+        </div>
+      </section>
+
+      <section id="sobre" class="section">
+        <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+        <p>Desenvolvedor Full Stack com 3 anos de experiência, especializado em TypeScript e React.js em ambientes AWS. Na Clubflex e Segmedic, tenho sido peça-chave no desenvolvimento de sistemas para clubes de assinatura e clínicas médicas.</p>
+        <p>Minha trajetória profissional demonstra forte capacidade de adaptação, tendo realizado com sucesso a transição da área de fibra óptica para o desenvolvimento de sistemas, evidenciando meu compromisso com o aprendizado contínuo.</p>
+        <p>Busco constantemente novos desafios que promovam crescimento acadêmico e profissional.</p>
+      </section>
+
+      <section id="conhecimentos" class="section">
+        <h2><i class="fas fa-brain"></i> Conhecimentos</h2>
+        <ul>
+          <li>Desenvolvimento full-stack com criação de API's utilizando TypeScript, Node, mySQL, PostgreSQL, consumo de API's, padrões de projetos, AWS, React e NextJs</li>
+          <li>Conhecimento em Terraform e Cloud AWS (EC2, SQS, DynamoDB, S3, Lambdas, RDS, Cloudwatch e outros serviços)</li>
+          <li>Inglês intermediário para leitura e escrita</li>
+          <li>Vivência com APIs: RD Stadium, Feegow, Tom Ticket, MailJet, Escallo, Vuupt</li>
+        </ul>
+      </section>
+
+      <section id="realizacoes" class="section">
+        <h2><i class="fas fa-trophy"></i> Principais Realizações</h2>
+        <ul class="achievements-list">
+          <li>Criei páginas web otimizadas para captação de novos leads, aumentando a conversão</li>
+          <li>Modifiquei automações existentes para agilizar o trabalho dos operadores de CRM</li>
+          <li>Aperfeiçoei o sistema de agendamento de consultas e exames, reduzindo em 40% a quantidade de cliques para melhorar a experiência do usuário</li>
+          <li>Automatizei o sistema de rotas, agilizando o processo dos operadores e carros</li>
+          <li>Desenvolvi sistema de validação para parceiros identificarem clientes da rede</li>
+          <li>Criei documentação de código para facilitar o entendimento da equipe</li>
+        </ul>
+      </section>
+
+      <section id="formacao" class="section">
+        <h2><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h2>
+        <div class="timeline-item">
+          <div class="year">2023 - 2027</div>
+          <div class="details">
+            <h3>Bacharelado em Sistema de Informação</h3>
+            <p>Universidade Estácio de Sá</p>
+            <ul>
+              <li>Desenvolvimento Web com PHP</li>
+              <li>Paradigmas com Python</li>
+              <li>Segurança da Informação</li>
+              <li>Programação Orientada a Objeto com Java</li>
+              <li>Banco de Dados</li>
+              <li>Modelagem UML</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section">
+        <h2><i class="fas fa-briefcase"></i> Experiência Profissional</h2>
+        <div class="timeline-item">
+          <div class="year">03/2023 - Atual</div>
+          <div class="details">
+            <h3>Analista de Desenvolvimento de Sistemas</h3>
+            <p>Clubflex & SegMedic</p>
+            <ul>
+              <li>Desenvolvimento Full Stack com ReactJs (Next.js), TypeScript, Node.js, AWS e SQL</li>
+              <li>Responsável pelo desenvolvimento de sites e plataformas online para clubes de assinatura e clínicas médicas</li>
+              <li>Criação de API's e automações para equipes de atendimento e venda</li>
+              <li>Supervisão de custos e escalabilidade da infraestrutura AWS</li>
+              <li>Liderança em projetos de TI com gestão de desenvolvimento e implementação</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="year">10/2014 - 01/2022</div>
+          <div class="details">
+            <h3>Técnico de Fibra Óptica / DTH</h3>
+            <p>Serede</p>
+            <ul>
+              <li>Instalação, manutenção e reparação de cabos de fibra óptica</li>
+              <li>Montagem, instalação, testes e reparos de cabos de fibra óptica</li>
+              <li>Instalação de tecnologias em redes de comunicação de dados</li>
+              <li>Técnico de DTH (2014-2020) com experiência em instalações residenciais</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="year">05/2013 - 08/2014</div>
+          <div class="details">
+            <h3>Técnico de Redes</h3>
+            <p>Intnet</p>
+            <ul>
+              <li>Manutenção e configuração de redes</li>
+              <li>Suporte técnico a clientes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="year">04/2012 - 05/2013</div>
+          <div class="details">
+            <h3>Auxiliar Administrativo</h3>
+            <p>Yes! Idiomas</p>
+            <ul>
+              <li>Suporte administrativo</li>
+              <li>Atendimento ao cliente</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="year">06/2008 - 01/2011</div>
+          <div class="details">
+            <h3>Processamento de Dados - Operador de Hipermercado</h3>
+            <p>Sendas Distribuidora S.A.</p>
+            <ul>
+              <li>Suporte técnico e operacional</li>
+              <li>Monitoramento e manutenção dos sistemas internos</li>
+              <li>Atualizações de hardware e software</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="section">
+        <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+        
+        <div class="skills-group">
+          <h3>Linguagens de Programação</h3>
+          <div class="skills-container">
+            <div class="skill-item">TypeScript <span class="skill-level level-90"></span></div>
+            <div class="skill-item">JavaScript <span class="skill-level level-90"></span></div>
+            <div class="skill-item">Ruby <span class="skill-level level-70"></span></div>
+            <div class="skill-item">Python <span class="skill-level level-70"></span></div>
+            <div class="skill-item">Java <span class="skill-level level-65"></span></div>
+          </div>
+        </div>
+        
+        <div class="skills-group">
+          <h3>Frameworks e Bibliotecas</h3>
+          <div class="skills-container">
+            <div class="skill-item">React/Next.js <span class="skill-level level-85"></span></div>
+            <div class="skill-item">Node.js <span class="skill-level level-85"></span></div>
+            <div class="skill-item">Express <span class="skill-level level-80"></span></div>
+            <div class="skill-item">Nest <span class="skill-level level-75"></span></div>
+            <div class="skill-item">Rails <span class="skill-level level-70"></span></div>
+            <div class="skill-item">Spring <span class="skill-level level-65"></span></div>
+          </div>
+        </div>
+        
+        <div class="skills-group">
+          <h3>Cloud e DevOps</h3>
+          <div class="skills-container">
+            <div class="skill-item">AWS <span class="skill-level level-75"></span></div>
+            <div class="skill-item">S3 <span class="skill-level level-80"></span></div>
+            <div class="skill-item">DynamoDB <span class="skill-level level-75"></span></div>
+            <div class="skill-item">EC2 <span class="skill-level level-75"></span></div>
+            <div class="skill-item">Lambda <span class="skill-level level-70"></span></div>
+            <div class="skill-item">API Gateway <span class="skill-level level-70"></span></div>
+            <div class="skill-item">Docker <span class="skill-level level-70"></span></div>
+            <div class="skill-item">Terraform <span class="skill-level level-65"></span></div>
+          </div>
+        </div>
+        
+        <div class="skills-group">
+          <h3>Banco de Dados</h3>
+          <div class="skills-container">
+            <div class="skill-item">SQL (MySQL/PostgreSQL) <span class="skill-level level-80"></span></div>
+            <div class="skill-item">NoSQL (DynamoDB) <span class="skill-level level-75"></span></div>
+          </div>
+        </div>
+        
+        <div class="skills-group">
+          <h3>Web</h3>
+          <div class="skills-container">
+            <div class="skill-item">HTML/CSS <span class="skill-level level-90"></span></div>
+            <div class="skill-item">WordPress <span class="skill-level level-80"></span></div>
+            <div class="skill-item">Git <span class="skill-level level-85"></span></div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="soft-skills" class="section">
+        <h2><i class="fas fa-users"></i> Habilidades Comportamentais</h2>
+        <div class="skills-container">
+          <div class="soft-skill">Comunicação assertiva</div>
+          <div class="soft-skill">Trabalho em equipe</div>
+          <div class="soft-skill">Adaptabilidade</div>
+          <div class="soft-skill">Organização</div>
+          <div class="soft-skill">Pensamento crítico</div>
+          <div class="soft-skill">Resolução de problemas</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Atualizado em: Março de 2025</p>
+      <p>© 2025 - Diogo de Assis - Todos os direitos reservados</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pdf-generator.js"></script>
+</body>
+</html>
