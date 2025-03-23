@@ -32,6 +32,17 @@
   background-color: #219653;
 }
 
+.header-content h1 {
+  color: white;
+  display: block;
+  opacity: 1;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
 /* Mensagem de carregamento */
 .loading-message {
   position: fixed;

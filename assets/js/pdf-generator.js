@@ -1,14 +1,7 @@
-/**
- * Script para gerar PDF ATS a partir do conteúdo da página
- */
-
 document.addEventListener('DOMContentLoaded', function() {
   console.log("PDF Generator script loaded");
+    const generatePdfButton = document.getElementById('generate-ats-pdf');
   
-  // Referência ao botão de geração de PDF
-  const generatePdfButton = document.getElementById('generate-ats-pdf');
-  
-  // Adicionar evento de clique ao botão
   if (generatePdfButton) {
     console.log("PDF button found, adding event listener");
     generatePdfButton.addEventListener('click', generateAtsPdf);
@@ -17,25 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-/**
- * Gera um PDF otimizado para ATS a partir do conteúdo da página
- */
 function generateAtsPdf() {
   console.log("generateAtsPdf function called");
   
-  // Mostrar mensagem de carregamento
   const loadingMessage = document.createElement('div');
   loadingMessage.className = 'loading-message';
   loadingMessage.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gerando PDF...';
   document.body.appendChild(loadingMessage);
   
-  // Usar setTimeout para permitir que a mensagem seja renderizada
   setTimeout(() => {
     try {
-      // No início da função generateAtsPdf
       console.log("jsPDF object:", window.jspdf);
 
-      // Verificar se jsPDF está disponível
       if (!window.jspdf) {
         console.error("jsPDF não foi carregado. Objeto window.jspdf:", window.jspdf);
         throw new Error("jsPDF não está disponível. Verifique a conexão com o CDN.");
