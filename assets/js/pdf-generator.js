@@ -296,6 +296,28 @@ function extractAtsContent() {
     });
   }
   
+  // Cursos e Certificações
+  const coursesSection = document.getElementById('cursos');
+  if (coursesSection) {
+    const courseItems = [];
+    const timelineItems = coursesSection.querySelectorAll('.timeline-item');
+    
+    timelineItems.forEach(item => {
+      const period = item.querySelector('.year').textContent;
+      const course = item.querySelector('h3').textContent;
+      const institution = item.querySelector('.details p').textContent;
+      const description = item.querySelectorAll('.details p')[1]?.textContent || '';
+      
+      courseItems.push(`${course} - ${institution} (${period}) - ${description}`);
+    });
+    
+    content.push({
+      title: 'Cursos e Certificações',
+      type: 'list',
+      items: courseItems
+    });
+  }
+  
   // Conhecimentos
   const knowledgeSection = document.getElementById('conhecimentos');
   if (knowledgeSection) {
@@ -376,6 +398,7 @@ function extractAtsContent() {
       items: softSkillItems
     });
   }
+  
   
   return content;
 }
